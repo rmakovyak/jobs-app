@@ -12,3 +12,5 @@ npm run start-server
 - I've skipped prop types check (just to save some time)
 - There are some comments about simplified version of container async testing
 - No state management lib included (also to save time mostly)
+
+Test feat 1
