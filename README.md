@@ -14,3 +14,4 @@ npm run start-server
 - No state management lib included (also to save time mostly)
 
 Test feat 1
+Fix 1
