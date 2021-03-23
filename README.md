@@ -18,5 +18,3 @@ Fix 1
 
 fix 2
 
-readme update
-readme update 2
