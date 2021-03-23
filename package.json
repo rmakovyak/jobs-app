@@ -1,6 +1,6 @@
 {
   "name": "jobs-app",
-  "version": "0.1.1",
+  "version": "0.0.0-development",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.9",
@@ -17,6 +17,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "semantic-release": "^17.4.2",
     "standard-version": "^9.1.1",
     "styled-components": "^5.1.0"
   },
@@ -26,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-server": "json-server --watch --port 3020 db.json",
-    "release": "standard-version"
+    "release": "standard-version",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,5 +44,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmakovyak/jobs-app.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.4.2"
   }
 }
