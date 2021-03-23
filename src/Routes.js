@@ -27,4 +27,6 @@ function Routes() {
   );
 }
 
+console.log('hello world');
+
 export default Routes;
