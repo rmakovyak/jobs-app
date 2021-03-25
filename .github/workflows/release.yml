@@ -3,6 +3,14 @@ name: release
 on: push
 
 jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Calculate slice diff
+        uses: technote-space/get-diff-action@v4
+        with:
+          PATTERNS: |
+            +(src)/**/*
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -13,12 +21,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Calculate slice diff
-        uses: technote-space/get-diff-action@v4
-        with:
-          PATTERNS: |
-            +(src)/**/*
-
       - name: Test
         run: echo 'Triggered'
         if: env.GIT_DIFF
