@@ -26,5 +26,10 @@ function Routes() {
     </Switch>
   );
 }
+
 console.log('helo world');
+
+
+console.log('hello world');
+
 export default Routes;
